@@ -1,0 +1,105 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    user-select: none;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.head >h1{
+    font-family: var(--font-main);
+    font-size: 3rem;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.head > h4 {
+    font-family: var(--font-normal);
+    font-size: 1.5rem;
+    color: var(--bg-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.head > p {
+    font-family: var(--font-normal);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116); */
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .head > h1 {
+        font-size: 2.5rem;
+    }
+
+    .head > h4 {
+        font-size: 1.25rem;
+    }
+
+    .head > p {
+        font-size: 0.875rem;
+    }
+}
